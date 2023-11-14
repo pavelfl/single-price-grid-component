@@ -1,0 +1,169 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.indent {
+  padding: 10px 30px 10px 30px;
+}
+
+.opacity {
+  opacity: 0.8;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 576px;
+  box-shadow: 0px 0px 20px 0px #e8e8e8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#commercial {
+  flex-grow: 1;
+  background-color: white;
+}
+
+#commercial>h2 {
+  color: hsl(179, 62%, 43%);
+}
+
+#commercial>h4 {
+  color: hsl(71, 73%, 54%);
+}
+
+#commercial>p {
+  color: hsl(222, 8%, 75%);
+  line-height: 1.5em;
+}
+
+#offer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+}
+
+#subscription {
+  flex-grow: 1;
+  background-color: hsl(179, 62%, 43%);
+  padding-right: 0px;
+}
+
+
+
+#subscription>h4 {
+  margin-bottom: 0px;
+}
+
+
+#payment {
+  display: flex;
+  margin-top: 10px;
+  flex-basis: 100px;
+}
+
+#payment>#price {
+  font-size: 2em;
+  align-self: center;
+  margin: 0 10px 0 0;
+}
+
+#payment>#frequency {
+  align-self: center;
+  opacity: 0.5;
+}
+
+#subscription>p {
+  margin-top: 0;
+  font-size: 0.9em;
+}
+
+
+button {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 5px;
+  color: white;
+  width: 90%;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px hsl(179, 63%, 33%);
+  transform: scale(1.05);
+}
+
+#whyus {
+  flex-grow: 1;
+  background-color: hsl(179, 47%, 52%);
+}
+
+#whyus>ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+}
+
+footer.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 375px) {
+
+  main {
+    width: 375px;
+  }
+
+  button {
+    margin-bottom: 20px;
+  }
+
+  #offer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 576px;
+  }
+
+  #offer {
+    flex-direction: row;
+  }
+}
